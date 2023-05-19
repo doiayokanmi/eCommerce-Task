@@ -14,6 +14,7 @@ saveTo.addEventListener('click', ()=> {
         errorMsg.innerHTML = "Enter value for all above space provided"
        
     } else {
+        errorMsg.innerHTML = ""
         allItems.push(items);
     }
 
@@ -30,7 +31,7 @@ const displayItem = () => {
       <p class="card-text">${allItems[index].itemDesc}</p>
       <div id="priQty"><h5 class="card-title">${allItems[index].itemPrice}</h5>
       <h5 class="card-title">${allItems[index].itemQty}</h5></div>
-      <div id="btnCrud"><a href="#" class="btn btn-primary" onclick="delItem(${index})">Delete</a>
+      <div id="btnCrud"><a href="#" class="btn btn-danger" onclick="delItem(${index})">Delete</a>
       <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</a></div>
     </div>
   </div> ` 
