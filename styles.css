@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 10px 20px;
+    border-bottom: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    padding: 5px;
+    width: calc(100%/4.5);
+}
+
+#disp {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#errorMsg {
+    text-align: center;
+    color: red;
+}
+
+.card {
+    width: calc(100%/4.4);
+}
+
+#btnCrud {
+    display: flex;
+    justify-content: space-between;
+}
+
+#priQty {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: calc(100%/2.2);
+    }
+
+    input {
+        width: calc(100%/2.5);
+    }
+}
